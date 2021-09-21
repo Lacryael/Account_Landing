@@ -1,0 +1,195 @@
+body {background-color: #334355; height: 100%;}
+
+.header {
+    z-index: 1;
+	position: fixed;
+    top: 0;
+    left: 0;
+    border:0px solid;
+    border-top: none;
+	background: white  5% 40%;
+	background-size: contain;
+    background-clip:padding-box;
+    margin: auto;
+    width: 100%;
+	  height: 120px;
+}
+
+
+.header-text{
+    font-family: arimo;
+    color: #334355;
+    margin: -106px 130px;
+}
+
+.contacts{
+  color:#334355 ;
+    margin: 25px 1% 0px 0px;
+    float: right;}
+
+
+i{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39px;
+  color:#334355;
+     margin: 0 -3% 10px;
+}
+
+
+
+.tabs {
+  min-width: 320px;
+  max-width: 3000px;
+  padding-top: 115px;
+  margin-left: 8%;
+  margin-right: 8%;
+
+
+}
+
+.tabs>section {
+  display: none;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0px 10px 10px 10px;
+  min-height: 600px;
+}
+
+
+.leftinf>p {
+      font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  margin: 0 7% 10px;
+  line-height: 1.5;
+  color: black;
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.rightinf>p {
+      font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+   margin: 0 7% 10px;
+  line-height: 1.5;
+  color: black;
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+.star>p {
+      font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  margin: 0 4% 10px;
+  line-height: 1.5;
+  color: black;
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+ 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tabs>input {
+  display: none;
+  position: absolute;
+}
+
+.tabs>label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color:  #888;
+  border: 0px solid #ddd;
+  border-width: 1px 1px 1px 1px;
+  background: #cbd2da;
+  border-radius: 3px 3px 0 0;
+  width: 18%;
+  cursor: grab;
+  font-size: 25px;
+}
+
+.tabs>label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+
+}
+
+
+.tabs>label:hover {
+  color: #4b4d4b;
+  cursor: pointer;
+}
+
+.tabs>input:checked+label {
+  color: #334355;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+  cursor: auto;
+  text-decoration: underline;
+}
+
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+  display: block;
+}
+
+@media screen and (max-width: 680px) {
+  .tabs>label {
+    font-size: 0;
+  }
+  .tabs>label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tabs>label {
+    padding: 15px;
+  }
+}
+        
+@media (max-width:1225px) {
+   .contacts{
+       display:none;
+   }
+}
